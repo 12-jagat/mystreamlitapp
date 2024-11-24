@@ -1,17 +1,4 @@
-import subprocess
-import sys
 
-# Function to ensure plotly is installed
-def install_plotly():
-    try:
-        import plotly
-    except ImportError:
-        print("Plotly not found. Installing it now...")
-        subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly"])
-        print("Plotly installed successfully!")
-
-# Call the function
-install_plotly()
 
 # Import plotly after ensuring it's installed
 
